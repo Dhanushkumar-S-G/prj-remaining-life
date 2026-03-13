@@ -21,7 +21,7 @@ export default function Page() {
           </div>
           <div className="flex flex-col gap-4 col-span-12 md:col-span-8">
             <div className="flex justify-center">
-              <h2 className="text-xl col-start-1">{ months ? `You've spent ${months} months out of your expected lifetime of ${lifetime} years` : "Enter your date of birth" }</h2>
+              <h2 className="text-xl col-start-1">{ months ? `You've spent ${months} months out of your expected lifetime of ${lifetime*12} months` : "Enter your date of birth" }</h2>
             </div>
             <div className="flex flex-wrap gap-2 w-full overflow-y-auto">
               {Array.from({ length: months }).map((_, i) => (
